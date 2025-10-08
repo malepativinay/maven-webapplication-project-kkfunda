@@ -21,10 +21,10 @@ node
      sh "${mavenHome}/bin/mvn clean package"
 
   }
- /* stage('SQ Report')
+  stage('SQ Report')
   {
      sh "${mavenHome}/bin/mvn sonar:sonar"
-  } */
+  } 
   stage('Deploy into Nexus')
   {
     sh "${mavenHome}/bin/mvn deploy"
